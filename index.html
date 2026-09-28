@@ -5,24 +5,19 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
 		<title>Bunnyville: Remastered</title>
 		<style>
-html, body, #canvas {
+html, body {
 	margin: 0;
 	border: 0;
-	padding: env(safe-area-inset-top)
-    	env(safe-area-inset-right)
-        env(safe-area-inset-bottom)
-        env(safe-area-inset-left);
-}
-
-body {
-	color: white;
-	background-color: black;
-	overflow: hidden;
-	touch-action: none;
+	padding: 0;
 }
 
 #canvas {
 	display: block;
+	padding: 0;
+	margin-left: env(safe-area-inset-left);
+	margin-right: env(safe-area-inset-right);
+	margin-top: env(safe-area-inset-top);
+	margin-bottom: env(safe-area-inset-bottom);
 }
 
 #canvas:focus {
